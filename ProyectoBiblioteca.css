@@ -1,0 +1,174 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+    font-family: 'Arial, Helvetica, sans-serif';
+    margin:0;
+    padding: 0;
+    flex-direction:row; 
+    background-color:rgb(208, 215, 212);
+} 
+header{
+	font-family:"Castellar";
+	background-image: url('LCR.png');
+    max-width: 100%;
+    height: auto;
+	background-size: cover;
+    background-repeat: no-repeat;
+	text-align:center;
+	padding:200px;
+	font-size:80px;
+    text-shadow: #a90000;
+    text-shadow: 20px;
+	color:#000000;
+    
+}
+.frase{
+    color: black;
+    background-color: transparent;
+    font-size: x-large;
+    font-family: 'ALGERIAN';
+}
+nav{
+    background-color: transparent;
+    font-family: 'Script MT Bold';
+    font-size: 20px;
+    margin-top: 10px;
+    color: rgb(0, 0, 0);
+    display:flex;
+    flex-direction:column-reverse;
+    padding: 0px;
+    margin: 0px;
+    font-weight: lighter;
+}
+
+.MenuHorizontal{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+        
+.MenuHorizontal > li > a{
+    display: inline-block;
+    padding: 15px 16px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+        
+.MenuHorizontal > li:hover{
+    background-color: rgb(122, 130, 133);
+}
+                              
+.MenuVer{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: rgb(199, 176, 171);
+    color:rgb(15, 9, 9);
+}
+        
+.MenuHorizontal li:hover .MenuVer {
+    display: block;
+    flex-direction: row;
+}
+
+.MenuVer li:hover {
+    background-color: rgb(235, 2, 2);
+}
+       
+.MenuVer li a{
+    display:inline-block;
+    color: rgb(255, 255, 255);
+    padding: 15px 15px 15px 20px;
+    text-decoration: none;
+    flex-direction: row;
+}
+
+.contenido{
+    display: flex;
+flex-wrap: wrap;
+}
+
+aside{
+    flex: 30px;
+    padding: 20px;
+    
+    
+}
+tr{
+    display: flex;
+    
+}
+
+.Promos tr td{
+    object-position: right;
+    flex-direction:column-reverse;
+    margin: 11px;
+    flex:70%;
+
+  
+}
+.Promos img{
+    padding: 30px;
+    max-width: 300px;
+    max-height: 500px;
+}
+
+
+
+.InicioPresentacion{
+font-size: 30px;
+font-family: 'Ebrima';
+color: black;
+
+}
+
+.Columna img{
+    width: 230px;
+    height: 350px;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 13px;
+}
+
+.MisionParrafo{
+    color: #a90000;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    text-align: center;
+    padding-left: 10px;
+    padding-top: 20px;
+    background-color: #c3b5b5;
+    margin: 0;
+
+}
+
+
+.VisionParrafo{
+    color: #a90000;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    text-align: center;
+    background-color: #8f7a7a;
+    padding-top: 8px;
+    margin: 0;
+
+}
+
+
+    
+footer{
+    padding: 5px;
+    color: #FFF;
+    background-color: rgb(172, 7, 7);
+    text-align: center;
+    margin: 0;
+
+}
+        
+@media screen and (max-width: 700px){
+    nav, .container{
+    flex-direction: column;
+    }
+}

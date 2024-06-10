@@ -1,0 +1,228 @@
+
+    header{
+        font-family:"Castellar";
+        background-image: url('LCR.png');
+        max-width: 100%;
+        height: auto;
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align:center;
+        padding:150px;
+        font-size:66px;
+        text-shadow: #a90000;
+        text-shadow: 20px;
+        color:#111010;
+        font-weight: bold;
+    }
+    nav{
+            
+        font-size: 15px;
+        margin-top: 10px;
+        color: rgb(70, 4, 4);
+        display:flex;
+        flex-direction:column-reverse;
+        padding: 0px;
+        margin: 0px;
+        z-index: 1;
+    }
+    
+    .MenuHorizontal{
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        z-index: 1;
+    }
+            
+    .MenuHorizontal > li > a{
+        display: inline-block;
+        padding: 15px 16px;
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        z-index: 1;
+    }
+            
+    .MenuHorizontal > li:hover{
+        background-color: rgb(255, 0, 0);
+        z-index: 1;
+    }
+                                  
+    .MenuVer{
+        position: absolute;
+        display: none;
+        list-style: none;
+        width: 200px;
+        background-color: rgb(217, 179, 107);
+        color:rgb(78, 20, 20);
+        z-index: 1;
+    }
+            
+    .MenuHorizontal li:hover .MenuVer {
+        display: block;
+        flex-direction: row;
+        z-index: 1;
+    }
+    
+    .MenuVer li:hover {
+        background-color: black;
+        z-index: 1;
+    }
+           
+    .MenuVer li a{
+        display:inline-block;
+        color: rgb(128, 7, 7);
+        padding: 15px 15px 15px 20px;
+        text-decoration: none;
+        flex-direction: row;
+        z-index: 1;
+    }
+
+body{
+    padding: 0;
+    margin: 0;
+}
+img{
+    width: 500px;
+    height: auto;
+}
+
+.Rectangulo{
+    padding-top: 20px;
+    width: 250px;
+    height: 110px;
+    background-color: black;
+    position: absolute;
+    top: 770px;
+    left: 920px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+  margin-top: 20px;
+  
+
+}
+.TablaFormulario{
+    width: 560px;
+    height: 600px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 860px;
+    left: 720px;
+    background-image: url('Arbol rojo.png');
+  
+}
+a{
+    text-decoration: none;
+}
+.Enviar{
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    align-items: center;
+    position:absolute;
+    top:510px;
+    left:240px;
+    z-index: 1;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+
+td{
+    color: rgb(0, 0, 0);
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: bold;
+}
+.Nombre{
+    position: absolute;
+    top: 20px;
+    left: 5px;
+    
+}
+.telefono{
+    
+    position: absolute;
+    top: 20px;
+    left: 285px;
+}
+.curp{
+    position: absolute;
+    top: 70px;
+    left: 8px;
+}
+.calle{
+    position: absolute;
+    top: 130px;
+    left: 10px;
+}
+.CP{
+    position: absolute;
+    top: 70px;
+    left: 270px;
+}
+.NumeroCasa{
+    position: absolute;
+    top: 130px;
+    left: 250px;
+}
+.Pais{
+    position: absolute;
+    top: 180px;
+    left: 10px;
+}
+.correo{
+    position: absolute;
+    top: 230px;
+    left: 10px;
+}
+.Municipio{
+    position: absolute;
+    top: 280px;
+    left: 10px;
+}
+.colonia{
+    position: absolute;
+    top: 330px;
+    left: 10px;
+}
+.Estado{
+    position: absolute;
+    top: 380px;
+    left: 10px;
+}
+
+.consejos{
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    top: 410px;
+    left: 10px;
+}
+.Razon{
+    position: absolute;
+    top: 490px;
+    left: 10px;
+}
+.mapa{
+    width: 100px;
+    height: 180px;
+}
+
+footer{
+    padding: 5px;
+    color: #FFF;
+    background-color: rgb(172, 7, 7);
+    text-align: center;
+    margin: 0;
+    z-index: 1;
+    position: relative;
+    
+
+}
+
+
+@media screen and (max-width: 700px){
+    nav, .container{
+   flex-direction: column;
+   }
+}
